@@ -1,0 +1,20 @@
+{
+  "name": "wtvr-element",
+  "version": "0.1.0",
+  "description": "A base updatable  element for the WTVR engine",
+  "main": "wtvr-element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wtvr",
+    "engine",
+    "wtvr-engine"
+  ],
+  "author": "John Tiesselune <tiesse@wtvr.games>",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wtvr-engine/wtvr-element"
+  }
+  "license": "MIT"
+}
