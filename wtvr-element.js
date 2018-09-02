@@ -53,10 +53,21 @@ export default class WTVRElement extends HTMLElement {
       }
     }
 
-    static createElement(templateString){
+    static createElement(template){
+      if(template instanceof HTMLTemplateElement){
+        return document.importNode(template.content,true);
+      }
+      else {
+        let templateElem = WTVRElement.createTemplate(template);
+        return document.importNode(templateElem.content,true);
+      }
+
+    }
+
+    static createTemplate(templateString){
       let template = document.createElement('template');
       template.innerHTML = templateString;
-      return document.importNode(template.content,true);
+      return template;
     }
 
 }
