@@ -13,8 +13,8 @@
   ],
   "author": "John Tiesselune <tiesse@wtvr.games>",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/wtvr-engine/wtvr-element"
+    "type": "git",
+    "url": "https://github.com/wtvr-engine/wtvr-element"
   },
   "license": "MIT"
 }
