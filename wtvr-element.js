@@ -7,16 +7,14 @@ export default class WTVRElement extends HTMLElement {
     }
 
     connectedCallback(){
-        if(this.hasAttribute("auto") && this.getAttribute("auto") != "false"){
+        if((this.hasAttribute("auto") && this.getAttribute("auto") != "false")
+        || (this.hasAttribute("self-update") && this.getAttribute("self-update") != "false")){
             this.start();
         }
     }
 
     start(){
-        if((this.hasAttribute("auto") && this.getAttribute("auto") != "false")
-            || (this.hasAttribute("self-update") && this.getAttribute("self-update") != "false")){
-            requestAnimationFrame(this.selfUpdate.bind(this));
-        }
+        requestAnimationFrame(this.selfUpdate.bind(this));
     }
 
     disable(){
