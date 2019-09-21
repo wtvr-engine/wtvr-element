@@ -17,5 +17,8 @@
     "url": "https://github.com/wtvr-engine/wtvr-element"
   },
   "license": "MIT",
-  "wtvr-module":true
-}
+  "wtvr-module": {
+    "files" : [
+      "wtvr-element.js"
+    ]
+  }
