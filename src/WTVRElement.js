@@ -1,4 +1,4 @@
-export default class WTVRElement extends HTMLElement {
+export class WTVRElement extends HTMLElement {
 
     constructor(){
         super();
